@@ -35,21 +35,21 @@ class AddItem extends Component {
     let names = [];
 
 
-    // axios.post('/getCategories')
-    //   .then((response) => {
-    //     console.log(response.data);
-    //     names = response.data;
-    //     console.log(names);
-    //
-    //     namesList = names.map(function (data) {
-    //       return (<option value={data.value}>{data.name}</option>);
-    //     });
-    //
-    //     this.setState({categoryNames: namesList});
-    //   })
-    //   .catch(function (error) {
-    //     console.log(error);
-    //   });
+    axios.post('/getCategories')
+      .then((response) => {
+        console.log(response.data);
+        names = response.data;
+        console.log(names);
+
+        namesList = names.map(function (data) {
+          return (<option value={data.value}>{data.name}</option>);
+        });
+
+        this.setState({categoryNames: namesList});
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
 
   }
 

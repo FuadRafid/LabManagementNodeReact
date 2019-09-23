@@ -320,15 +320,3 @@ app.post('/changeLogo', upload.single('file'), (req, res) => {
         throw err;
     }
 });
-
-
-
-
-app.get('/rafid', function (req, res) {
-    res.send('bad boy but il');
- });
-
- //server start
- app.listen(8081, function () {
-   console.log("Server started");
-});

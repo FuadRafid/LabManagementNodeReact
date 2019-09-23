@@ -320,3 +320,7 @@ app.post('/changeLogo', upload.single('file'), (req, res) => {
         throw err;
     }
 });
+
+app.listen(8081, function () {
+   console.log("Server started");
+});

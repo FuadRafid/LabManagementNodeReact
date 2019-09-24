@@ -65,10 +65,10 @@ class DefaultHeader extends Component {
         <AppSidebarToggler className="d-lg-none" display="md" mobile />
 
 
-        <img className="" src={'http://localhost:8081/uploads/'+this.props.logoSrc} style={{width: "42px", height: "42px",marginLeft:"10px"}}/>
-        <p style={{textAlign:"center",marginLeft:"14px",marginRight:"3px"}}><br/><b>MIST<br/>Lab Manager</b></p>
-        <AppSidebarToggler className="d-md-down-none" display="lg" />
-
+        
+        <AppSidebarToggler className="d-md-down-none" display="lg" style={{width: "2.5%", height: "80%",marginBottom:"0.5%"}} />
+        <img className="" src={'http://localhost:8081/uploads/'+this.props.logoSrc} style={{width: "2.5%", height: "80%",marginLeft:"1%",marginBottom:"0.5%"}}/>
+        <p style={{textAlign:"center",marginLeft:"1%",marginTop:"0.5%"}}><b>MIST<br/>Lab Manager</b></p>
         {/* <Nav className="d-md-down-none" navbar>
           <NavItem className="px-3">
             <NavLink href="/">Dashboard</NavLink>
@@ -92,7 +92,7 @@ class DefaultHeader extends Component {
           </NavItem> */}
           <AppHeaderDropdown direction="down">
             <DropdownToggle nav>
-              <img src={'http://localhost:8081/uploads/user.png'} className="img-avatar" />
+              <img src={'http://localhost:8081/uploads/user.png'} className="img-avatar" style={{marginBottom:"30%"}} />
             </DropdownToggle>
             <DropdownMenu right style={{ right: 'auto' }}>
                <DropdownItem header tag="div" className="text-center" ><strong>Account</strong></DropdownItem>

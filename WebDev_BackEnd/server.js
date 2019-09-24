@@ -17,10 +17,10 @@ var con = mysql.createConnection({
 const UPLOAD_PATH = 'uploads';
 const upload = multer({ dest: `${UPLOAD_PATH}/` });
 
-  con.connect(function(err) {
+con.connect(function(err) {
     if (err) throw err;
-    console.log("Connected!");
-  });
+    console.log("Connected to MySql!");
+});
 
 app.get('/', function (req, res) {
    res.send('Hello World');
